@@ -1,0 +1,135 @@
+.main-container {
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:20px;
+    /* border: 1px solid; */
+}
+.side-left-bar {
+    width:300px; 
+}
+.side-right-bar {
+    width:450px; 
+}
+.main {
+    flex-grow: 1;
+}
+.side-left-bar, .main, .side-right-bar {
+    background-color: #242424;
+    border:1px solid #242424;
+    height:100vh;
+    text-align: left;
+}
+.inner-container {
+    padding: 40px 20px 40px 20px;
+}
+
+.greetings {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.recent-playlist {
+    margin:30px 0 30px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.songs-list{
+    margin:30px 0 30px 0;
+}
+
+.current-song-container {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.song-details-section {
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+
+.song-details-inner {
+    font-size: 0.825rem;
+}
+.singer-name{
+    color:gray;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.7rem;
+}
+.player-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.player-icons-container, .player-progress-bar-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+.player-right-bar-section {
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+
+ input[type=range],
+ input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none; 
+	appearance: none;
+}
+ input[type=range] {
+	border-radius: 0.25em;
+	height: 0.5em;
+}
+ input[type=range] {
+	background-color: #fff;
+	display: block;
+	margin: 0.5em 0;
+	padding: 0;
+}
+ input[type=range]:focus {
+	outline: transparent;
+}
+ input[type=range]::-webkit-slider-thumb {
+	background-color: #255ff4;
+	border: 0;
+	border-radius: 50%;
+	cursor: pointer;
+	position: relative;
+	transition: background 0.1s linear;
+	width: 1.5em;
+	height: 1.5em;
+	z-index: 1;
+}
+ input[type=range]::-moz-range-thumb {
+	background-color: #255ff4;
+	border: 0;
+	border-radius: 50%;
+	cursor: pointer;
+	position: relative;
+	transform: translateZ(1px);
+	transition: background-color 0.1s linear;
+	width: 1.5em;
+	height: 1.5em;
+	z-index: 1;
+}
+ input[type=range]::-moz-focus-outer {
+	border: 0;
+}
+input[type=range]::-webkit-slider-thumb,
+ input[type=range]:focus::-webkit-slider-thumb,
+ input[type=range]::-webkit-slider-thumb:hover {
+	background-color: #0b46da;
+}
+input[type=range]::-moz-range-thumb,
+ input[type=range]:focus::-moz-range-thumb,
+ input[type=range]::-moz-range-thumb:hover {
+	background-color: #0b46da;
+}
